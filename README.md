@@ -17,3 +17,32 @@
 - обработки и анализа химических данных,  
 - построения ETL-процессов,  
 - задач машинного обучения (регрессия/классификация).  
+
+## How to run
+
+1. **Активировать окружение:**
+```powershell
+conda activate data-eng
+```
+
+2. **Установить зависимости через Poetry:**
+```powershell 
+poetry install
+```
+
+3. **Установить переменную окружения FILE_ID (только первый раз):**
+```powershell 
+conda env config vars set FILE_ID=1lbOez3uheggR4F7jqCHgVNfVtvucCSp4
+conda activate data-eng
+```
+
+4. **Запустить скрипт для чтения датасета:**
+```powershell
+poetry run python data_loader.py
+```
+
+---
+
+## First 10 rows of the dataset
+
+![Dataset head](images/screenshot_head10.png)
