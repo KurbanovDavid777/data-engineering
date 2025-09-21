@@ -43,6 +43,6 @@ poetry run python data_loader.py
 
 ---
 
-## First 10 rows of the dataset
+## Первые 10 строк даты
 
 ![Dataset head](images/screenshot_head10.png)
