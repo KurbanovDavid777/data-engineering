@@ -18,25 +18,40 @@
 - построения ETL-процессов,  
 - задач машинного обучения (регрессия/классификация).  
 
-## Руководство по использованию
+## Настройка проекта
 
-1. **Активировать окружение:**
+1. **Клонирования репозитория:**
 ```powershell
+git clone https://github.com/KurbanovDavid777/data-engineering.git
+cd D:\PROJECTS\Data_engineering
+```
+
+2. **Активировать conda окружение:**
+```powershell
+conda create -n data-eng python=3.13 -y
 conda activate data-eng
 ```
 
 2. **Установить зависимости через Poetry:**
 ```powershell 
 poetry install
+poetry config virtualenvs.in-project true
 ```
 
-3. **Установить переменную окружения FILE_ID (только первый раз):**
+3. **Установка необходимых библиотек через Poetry:**
+```powershell 
+poetry add pandas matplotlib jupyterlab wget
+```
+
+4. **Установить переменную окружения FILE_ID (только первый раз):**
 ```powershell 
 conda env config vars set FILE_ID=1lbOez3uheggR4F7jqCHgVNfVtvucCSp4
 conda activate data-eng
 ```
 
-4. **Запустить скрипт для чтения датасета:**
+## Запуск скрипта проекта
+
+1. **Запустить скрипт для чтения датасета:**
 ```powershell
 poetry run python data_loader.py
 ```
