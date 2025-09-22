@@ -3,6 +3,7 @@
 ## Описание датасета
 В проекте используется датасет `rev8020split_desc.csv` из библиотеки **DeepChem**.  
 Ссылка: https://github.com/deepchem/deepchem/blob/master/datasets/rev8020split_desc.csv 
+
 Ссылка на гугл диск: https://drive.google.com/file/d/1lbOez3uheggR4F7jqCHgVNfVtvucCSp4/view?usp=sharing
 
 Краткая характеристика датасета:
