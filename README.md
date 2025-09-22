@@ -25,7 +25,7 @@
 1. **Клонирования репозитория:**
 ```powershell
 git clone https://github.com/KurbanovDavid777/data-engineering.git
-cd D:\PROJECTS\Data_engineering
+cd Data_engineering
 ```
 
 2. **Активировать conda окружение:**
