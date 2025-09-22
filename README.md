@@ -34,18 +34,18 @@ conda create -n data-eng python=3.13 -y
 conda activate data-eng
 ```
 
-2. **Установить зависимости через Poetry:**
+3. **Установить зависимости через Poetry:**
 ```powershell 
 poetry install
 poetry config virtualenvs.in-project true
 ```
 
-3. **Установка необходимых библиотек через Poetry:**
+4. **Установка необходимых библиотек через Poetry:**
 ```powershell 
 poetry add pandas matplotlib jupyterlab wget
 ```
 
-4. **Установить переменную окружения FILE_ID (только первый раз):**
+5. **Установить переменную окружения FILE_ID (только первый раз):**
 ```powershell 
 conda env config vars set FILE_ID=1lbOez3uheggR4F7jqCHgVNfVtvucCSp4
 conda deactivate
