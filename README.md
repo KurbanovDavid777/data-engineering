@@ -48,6 +48,7 @@ poetry add pandas matplotlib jupyterlab wget
 4. **Установить переменную окружения FILE_ID (только первый раз):**
 ```powershell 
 conda env config vars set FILE_ID=1lbOez3uheggR4F7jqCHgVNfVtvucCSp4
+conda deactivate
 conda activate data-eng
 ```
 
