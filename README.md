@@ -59,8 +59,6 @@ conda activate data-eng
 poetry run python data_loader.py
 ```
 
----
-
-## Первые 10 строк даты
+**Вывод скрипта** 
 
 ![Dataset head](images/screenshot_head10.png)
