@@ -24,4 +24,4 @@ poetry run python data_parser.py
 ```
 ## Скриншот работы скрипта
 
-![Вывод скрипта](images/books_parser_output.png)
+![Вывод скрипта](.../images/books_parser_output.png)
