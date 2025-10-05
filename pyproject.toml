@@ -12,7 +12,9 @@ dependencies = [
     "matplotlib (>=3.10.6,<4.0.0)",
     "jupyterlab (>=4.4.7,<5.0.0)",
     "wget (>=3.2,<4.0)",
-    "pyarrow (>=21.0.0,<22.0.0)"
+    "pyarrow (>=21.0.0,<22.0.0)",
+    "requests (>=2.32.5,<3.0.0)",
+    "beautifulsoup4 (>=4.14.2,<5.0.0)"
 ]
 
 
