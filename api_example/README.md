@@ -15,6 +15,7 @@
 
 ## Результат
 Скриншот вывода скрипта:
+
 ![Output](../images/hackernews_output.png)
 
 Пример DataFrame, который создается скриптом:
