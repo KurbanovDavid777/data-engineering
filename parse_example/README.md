@@ -1,4 +1,4 @@
-# Books to Scrape Parser
+# Парсинг сайта "Books to Scrape" 
 
 Простой скрипт для парсинга сайта [Books to Scrape](http://books.toscrape.com/).
 
