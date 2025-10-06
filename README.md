@@ -22,17 +22,32 @@
 
 ## Структура проекта
 ```
+
 Data_engineering/
 │
-├── images/                    # Скриншоты и изображения для README
-│   └── screenshot_head10.png
+├── api_example/                     # Пример с API HackerNews
+│   ├── api_reader.py                # Скрипт для загрузки данных из API
+│   └── README.md                    # Документация к примеру API
 │
-├── data_loader.py             # Скрипт для загрузки и первичной обработки датасета
-├── environment.yml            # Конфигурация conda окружения
-├── pyproject.toml             # Файл проекта Poetry с зависимостями
-├── poetry.lock                # Зафиксированные версии зависимостей
-├── .gitignore                 # Файл игнорирования (содержит строку "data/")
-└── README.md                  # Документация проекта
+├── parse_example/                   # Пример с парсингом HTML
+│   ├── data_parser.py               # Скрипт для парсинга сайта books.toscrape.com
+│   └── README.md                    # Документация к примеру парсинга
+│
+├── data/                            # Папка для сохранения данных (в .gitignore)
+│                   
+│
+├── images/                          # Скриншоты и изображения для README
+|   ├── screenshot_head10.png        # Скриншот вывода скрипта data_loader.py            
+│   ├── hackernews_output.png        # Скрин вывода API-примера
+│   └── books_parser_output.png      # Скрин вывода парсера
+|
+|── data_loader.py                   # Скрипт для загрузки и первичной обработки датасета
+├── pyproject.toml                   # Poetry: описание зависимостей проекта
+├── poetry.lock                      # Зафиксированные версии библиотек
+├── environment.yml                  # Конфигурация окружения 
+├── .gitignore                       # Исключения для git (в т.ч. /data/)
+└── README.md                        # Основная документация проекта
+
 
 ```
 
