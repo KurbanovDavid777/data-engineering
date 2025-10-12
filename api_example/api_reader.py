@@ -5,17 +5,34 @@ import os
 # URL API HackerNews
 url = "https://hacker-news.firebaseio.com/v0/item/8863.json?print=pretty"
 
-# Делаем запрос
-response = requests.get(url)
-data = response.json()
+try:
+    # Пытаемся сделать запрос
+    response = requests.get(url, timeout=10)
+    response.raise_for_status()  # выбросит исключение, если код ответа не 200
 
-# Конвертируем в DataFrame
-df = pd.DataFrame([data])
+    # Пробуем преобразовать ответ в JSON
+    data = response.json()
 
-# Создаём папку data (игнорируем в .gitignore)
-os.makedirs("../data", exist_ok=True)
+    # Проверим, что данные действительно в виде словаря
+    if not isinstance(data, dict):
+        raise ValueError("Некорректный формат данных (ожидался JSON-объект)")
 
-# Сохраняем как CSV, но не комтитим так как папка data в ..gitignore
-df.to_csv("../data/hackernews_post.csv", index=False)
+    # Конвертируем в DataFrame
+    df = pd.DataFrame([data])
 
-print(df.head())
+    df.to_csv("../data/hackernews_post.csv", index=False, encoding="utf-8-sig")
+
+    print("Данные успешно получены и сохранены:")
+    print(df.head())
+
+except requests.exceptions.Timeout:
+    print("Ошибка: время ожидания запроса истекло.")
+except requests.exceptions.ConnectionError:
+    print("Ошибка: не удалось подключиться к серверу.")
+except requests.exceptions.HTTPError as e:
+    print(f"HTTP ошибка: {e}")
+except ValueError as e:
+    print(f"Ошибка обработки данных: {e}")
+except Exception as e:
+    print(f"Непредвиденная ошибка: {e}")
+
