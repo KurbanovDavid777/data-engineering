@@ -33,6 +33,8 @@ Data_engineering/
 │   ├── data_parser.py               # Скрипт для парсинга сайта books.toscrape.com
 │   └── README.md                    # Документация к примеру парсинга
 │
+├── notebooks/                       # Ноутбуки
+|   └── EDA.ipynb
 ├── data/                            # Папка для сохранения данных (в .gitignore)
 │                   
 │
