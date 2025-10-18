@@ -36,12 +36,14 @@ Data_engineering/
 ├── notebooks/                       # Ноутбуки
 |   └── EDA.ipynb
 ├── data/                            # Папка для сохранения данных (в .gitignore)
-│                   
+├── secrets/                         # (в .gitignore)
 │
 ├── images/                          # Скриншоты и изображения для README
 |   ├── screenshot_head10.png        # Скриншот вывода скрипта data_loader.py            
 │   ├── hackernews_output.png        # Скрин вывода API-примера
 │   └── books_parser_output.png      # Скрин вывода парсера
+|
+|── write_to_db.py                   # Скрипт для загрузки даты в бд
 |
 |── data_loader.py                   # Скрипт для загрузки и первичной обработки датасета
 ├── pyproject.toml                   # Poetry: описание зависимостей проекта
