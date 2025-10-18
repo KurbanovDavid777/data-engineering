@@ -1,3 +1,4 @@
 # Игнорируем данные
 data/
 secrets/
+__pycache__/
