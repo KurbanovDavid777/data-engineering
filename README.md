@@ -107,3 +107,10 @@ poetry run python data_loader.py
 **Вывод скрипта** 
 
 ![Dataset head](images/screenshot_head10.png)
+
+
+## Exploratory Data Analysis (EDA) датасета 
+
+Полный интерактивный EDA ноутбук доступен для просмотра онлайн через nbviewer:
+
+[Просмотреть EDA Notebook](https://nbviewer.org/github/KurbanovDavid777/data-engineering/blob/main/notebooks/EDA.ipynb)
