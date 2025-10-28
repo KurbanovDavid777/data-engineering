@@ -35,17 +35,25 @@ Data_engineering/
 │
 ├── notebooks/                       # Ноутбуки
 |   └── EDA.ipynb
-├── data/                            # Папка для сохранения данных (в .gitignore)
-├── secrets/                         # (в .gitignore)
+|
+├── .gitignore
+|   └── data/ 
+│   ├── config/          
+│   ├── __pycache__/
 │
 ├── images/                          # Скриншоты и изображения для README
-|   ├── screenshot_head10.png        # Скриншот вывода скрипта data_loader.py            
+|   ├── ETL.png                      # Скриншот вывода  ETL        
 │   ├── hackernews_output.png        # Скрин вывода API-примера
 │   └── books_parser_output.png      # Скрин вывода парсера
 |
-|── write_to_db.py                   # Скрипт для загрузки даты в бд
+├── etl                             
+|   ├── __init__
+|   ├── extract.py                   # Загрузка сырых данных с Google Диска, базовая валидация, сохранение CSV в `data/raw/`.
+|   ├── load.py                      # Сохранение обработанных данных в `data/processed/*.parquet`, а также загрузка до 100 строк в PostgreSQL (если настроена).
+|   ├── main.py                      # Объединяет все этапы: загрузку, трансформацию, сохранение parquet и загрузку в БД. Требует минимум один аргумент — FILE_ID.
+|   ├── transform.py                 # Преобразование данных (типизация, очистка, подготовка physchem колонок). 
+|   ├── validate.py                  # Отдельные проверки валидации данных                 
 |
-|── data_loader.py                   # Скрипт для загрузки и первичной обработки датасета
 ├── pyproject.toml                   # Poetry: описание зависимостей проекта
 ├── poetry.lock                      # Зафиксированные версии библиотек
 ├── environment.yml                  # Конфигурация окружения 
