@@ -57,7 +57,6 @@ Data_engineering/
 ├── pyproject.toml                   # Poetry: описание зависимостей проекта
 ├── poetry.lock                      # Зафиксированные версии библиотек
 ├── environment.yml                  # Конфигурация окружения 
-├── .gitignore                       # Исключения для git (в т.ч. /data/)
 └── README.md                        # Основная документация проекта
 
 
