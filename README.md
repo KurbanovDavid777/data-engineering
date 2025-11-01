@@ -100,7 +100,7 @@ conda activate data-eng
 
 ```powershell
 # Запуск ETL с переменной FILE_ID (ID файла на Google Диске)
-# "--no-db" - означает без загрузки в базу данных SQl, чтобы запустить с выгрузкой в бд, нужно убрать "--no-db" из кода
+# "--no-db" - означает без загрузки в базу данных SQl, чтобы запустить с выгрузкой в бд, нужно убрать "--no-db" из команады
 python -m etl.main 1lbOez3uheggR4F7jqCHgVNfVtvucCSp4 --no-db
 ```
 
