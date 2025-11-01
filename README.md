@@ -106,9 +106,14 @@ python -m etl.main 1lbOez3uheggR4F7jqCHgVNfVtvucCSp4 --no-db
 
 ## Пример работы ETL
 
-Скрипт ETL загружает, валидирует и преобразует данные, затем сохраняет их в Parquet и (опционально) в базу данных.
+Скрипт ETL загружает, валидирует и преобразует данные, затем сохраняет их в Parquet.
 
-![Пример ETL](images/ETL.png)
+![Пример ETL без записи в БД](images/ETL.png)
+
+Скрипт ETL загружает, валидирует и преобразует данные, затем сохраняет их в Parquet и в базу данных.
+
+![Пример ETL с записью в БД](images/ETL_with_DB.png)
+
 
 
 ## Exploratory Data Analysis (EDA) датасета 
